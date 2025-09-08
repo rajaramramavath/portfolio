@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Rajaram</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm border-b z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <span class="text-xl font-bold text-blue-600">Welcome</span>
+      </a>
+      <ul id="nav-links" class="hidden md:flex items-center gap-6 text-sm">
+        <li><a class="nav-link text-gray-600 hover:text-blue-600" href="#projects">Projects</a></li>
+        <li><a class="nav-link text-gray-600 hover:text-blue-600" href="#skills">Skills</a></li>
+        <li><a class="nav-link text-gray-600 hover:text-blue-600" href="#education">Education</a></li>
+        <li><a class="nav-link text-gray-600 hover:text-blue-600" href="#achievements">Achievements</a></li>
+        <li><a class="nav-link text-gray-600 hover:text-blue-600" href="#leetcode">LeetCode</a></li>
+        <li><a class="nav-link text-gray-600 hover:text-blue-600" href="#contact">Contact</a></li>
+      </ul>
+      <button id="menu-btn" aria-label="Open menu" class="md:hidden text-2xl text-gray-700">&#9776;</button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+      <div class="px-6 py-4">
+        <ul class="flex flex-col gap-3">
+          <li><a class="nav-link text-gray-700" href="#projects">Projects</a></li>
+          <li><a class="nav-link text-gray-700" href="#skills">Skills</a></li>
+          <li><a class="nav-link text-gray-700" href="#education">Education</a></li>
+          <li><a class="nav-link text-gray-700" href="#achievements">Achievements</a></li>
+          <li><a class="nav-link text-gray-700" href="#leetcode">LeetCode</a></li>
+          <li><a class="nav-link text-gray-700" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-6 pt-28 relative overflow-hidden">
+    <div class="background-overlay absolute inset-0 z-0 pointer-events-none">
+      <div class="line text-emerald-500" style="top:10%; left:5%;" data-text="[OK] System check complete"></div>
+      <div class="line text-red-600" style="top:20%; left:40%;" data-text="[ERROR] Unauthorized access detected"></div>
+      <div class="line text-yellow-500" style="top:30%; left:20%;" data-text="⚠ Memory usage: 82%"></div>
+      <div class="line text-sky-600" style="top:40%; left:70%;" data-text="[LOAD] analytics.js initialized"></div>
+      <div class="line text-gray-500" style="top:50%; left:15%;" data-text="$ ssh root@192.168.0.1"></div>
+      <div class="line text-emerald-500" style="top:60%; left:60%;" data-text="✓ Network stable"></div>
+      <div class="line text-red-600" style="top:70%; left:30%;" data-text="[ALERT] Firewall breach attempt"></div>
+      <div class="line text-yellow-500" style="top:80%; left:50%;" data-text="⚠ Disk space: 92% full"></div>
+      <div class="line text-sky-600" style="top:90%; left:20%;" data-text="[Tool: Encryption Module Loaded]"></div>
+      <div class="line text-emerald-500" style="top:95%; left:65%;" data-text="✓ Backup completed successfully"></div>
+    </div>
+
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight relative z-10">
+      Hi, I'm <span class="text-blue-600">Rajaram</span>
+    </h1>
+    <p id="typing-text" class="text-lg md:text-xl text-gray-700 h-8 mb-6 relative z-10"></p>
+    <div class="flex justify-center gap-4 mb-12 relative z-10">
+      <a href="assets/resume.pdf" target="_blank" class="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 transition">
+        View Resume
+      </a>
+      <a href="#contact" class="px-6 py-3 rounded-full border border-gray-200 text-gray-700 hover:bg-gray-50 transition hidden md:inline-block">
+        Contact
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-white"></section>
+
+  <!-- EDUCATION & SKILLS -->
+  <section id="edu-skills" class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-2">
+      <div id="education" class="bg-white rounded-2xl shadow-sm p-6 section-card"></div>
+      <div id="skills" class="bg-white rounded-2xl shadow-sm p-6 section-card"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS & ACHIEVEMENTS -->
+  <section id="proj-achieve" class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-2">
+      <div id="projects" class="bg-white rounded-2xl shadow-sm p-6 section-card"></div>
+      <div id="achievements" class="bg-white rounded-2xl shadow-sm p-6 section-card"></div>
+    </div>
+  </section>
+
+  <!-- LEETCODE BADGE -->
+  <section id="leetcode" class="flex justify-center mb-12">
+    <a href="https://leetcode.com/RajaramRamavath" target="_blank" class="relative inline-block">
+      <img src="https://leetcode-badge-sage.vercel.app/badge/RajaramRamavath?theme=light&bgColor=ffffff"
+           alt="LeetCode Badge"
+           class="rounded-lg shadow-md" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+           alt="LeetCode Logo"
+           class="absolute left-2 top-1/4 -translate-y-1/2 h-6" />
+    </a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-white"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
